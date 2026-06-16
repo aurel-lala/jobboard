@@ -83,6 +83,9 @@ export function register(data: RegisterData): AuthResult {
     notifications: [],
     interviews: [],
     createdAt: new Date().toISOString(),
+    languages?: string[];
+    certifications?: string[];
+    links?: string[];
   };
 
   localStorage.setItem(USERS_STORAGE_KEY, JSON.stringify([...users, newUser]));
